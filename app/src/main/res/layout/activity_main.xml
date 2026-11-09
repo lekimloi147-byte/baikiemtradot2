@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Lê Kim Lợi- 2415141122111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp"/>
+    <EditText
+        android:id="@+id/edtCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nhập tên học phần (1-40) ký tự"
+        inputType="text"/>
+
+    <EditText
+        android:id="@+id/edtQT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="điểm quá trình (0-10)"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/edtCK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="điểm cuối kỳ (0-10)"
+        android:inputType="numberDecimal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="kiểm tra"/>
+
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="xóa"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+<TextView
+    android:id="@+id/tvResult"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:textSize="16sp"/>
+
+</LinearLayout>
